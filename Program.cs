@@ -13,7 +13,8 @@ namespace rpg_game_code
             Console.WriteLine("Say your type:\n");
             Console.WriteLine("|   Mage  |" + 
                             "\n| Warrior |"+
-                            "\n|  Priest |\n\n");
+                            "\n|  Priest |\n\n"+
+                            "Enter your type...\n");
 
             string playerType = Console.ReadLine();
 

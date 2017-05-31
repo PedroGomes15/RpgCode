@@ -14,8 +14,8 @@ namespace rpg_game_code
         public int Stamina = 0;
         public rpg_class(string playerType)
         {
-            this.typePlayer = playerType;
-            if(playerType == "mage" || playerType == "Mage")
+            this.typePlayer = playerType.ToLower();
+            if(typePlayer == "mage")
             {
                 this.typePlayer = "Mage";
                 this.lvl = 1;
@@ -25,7 +25,7 @@ namespace rpg_game_code
                 this.Stamina = 4;
             }
 
-            else if(playerType == "warrior" || playerType == "Warrior")
+            else if(typePlayer == "warrior")
             {
                 this.typePlayer = "Warrior";
                 this.lvl = 1;
@@ -35,7 +35,7 @@ namespace rpg_game_code
                 this.Stamina = 6;
             }
 
-            else if(playerType == "priest" || playerType == "Priest")
+            else if(typePlayer == "priest")
             {
                 this.typePlayer = "Priest";
                 this.lvl = 1;
